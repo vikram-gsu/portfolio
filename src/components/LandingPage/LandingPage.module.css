@@ -1,0 +1,133 @@
+html {
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  display: grid;
+  /* border: 1px solid blue; */
+  grid-template: [nav-start] 6em [nav-end content-start] 1fr [content-end footer-start] auto [footer-end]/0.2fr 0.75fr 1fr 0.2fr;
+  grid-template-areas:
+    "header header header header"
+    ". profileImage content .";
+  grid-gap: 2em;
+}
+
+.container>nav {
+  grid-area: header;
+  /* border: 1px solid blue; */
+}
+
+.container>img {
+  grid-area: profileImage;
+  /* border: 1px solid blue; */
+
+}
+
+.container>aside {
+  grid-area: content;
+  /* border: 1px solid blue; */
+}
+
+img {
+  height: 50vh;
+  padding-top:5em;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template: minmax(15em, 0.5fr) minmax(15em, 0.5fr)/0.5fr 0.5fr;
+  padding:0;margin:0;
+}
+
+.box {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 16em;
+  background-color: #ffffff;
+  border-radius: 0.25em;
+  padding: 2em 1.5em;
+  margin: 0.75em;
+  text-decoration: none;
+  overflow: hidden;
+  border: 0.1em solid #cccccc;
+  color: black;
+  text-align: left;
+}
+.box .goArrow {
+  padding-top: 2em;
+}
+
+.box:hover {
+  border: 1px solid #CD3D73;
+}
+
+.box h3 {
+  margin-top: 8px;
+}
+
+.box:hover .goCorner {
+  margin-right: -12px;
+}
+
+.box:hover .goArrow {
+  opacity: 1;
+}
+
+.box .learnMore {
+  padding-top:1em;
+}
+
+.box:hover .learnMore {
+  color: #CD3D73;
+  font-style: italic;
+}
+
+/* .box {
+  border: 0.1em solid black;
+
+} */
+
+/* .box>span {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.box:hover>span {
+  visibility: visible;
+  opacity: 1;
+} */
+/* .box:hover>h3{
+  display: none;
+} */
+
+@media all and (max-width:800px) {
+  .container {
+    grid-template: [nav-start] 6em [nav-end content-start] 1fr [content-end]/0.1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+      'header header header header'
+      '. profileImage content .'
+  }
+
+  .contentGrid {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+  }
+}
+
+@media all and (max-width:600px) {
+  .container {
+    grid-template: [nav-start] 6em [nav-end profile-image-start] 0.5fr [profile-image-end content-start] 1fr [content-end]/0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      'header header header'
+      '. content .';
+  }
+
+  .contentGrid {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+  }
+}

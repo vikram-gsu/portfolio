@@ -1,0 +1,71 @@
+.Nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.Nav .title {
+  flex: 0.6;
+  /* white-space: pre-wrap; */
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.Nav .title :active {
+  font-weight: bolder;
+}
+
+.Nav > li {
+  flex: 0.1;
+  text-align: center;
+}
+
+.Nav > li > a{
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0.5em 0;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Nav > li > a:hover {
+  font-weight: bolder;
+}
+
+.Nav > li> a:active {
+  font-weight: bolder;
+}
+.Nav >li:last-child {
+  padding-right: 1em;
+}
+
+@media all and (max-width: 600px) {
+  .Nav {
+    flex-wrap: wrap
+  }
+
+  .Nav > li {
+    flex-basis: 50%;
+  }
+
+  .Nav >li:last-child {
+    padding-right: 0;
+  }
+
+  .Nav .title {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media all and (max-width:400px) {
+  .Nav > li {
+    flex-basis: 100%
+  }
+
+}

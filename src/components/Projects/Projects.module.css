@@ -1,54 +1,68 @@
 
 .contentGrid {
+  /* border: 1px solid blue; */
   display: grid;
-  grid-template: minmax(15em, 0.5fr) minmax(15em, 0.5fr)/0.5fr 0.5fr;
-  padding:0;margin:0;
+  grid-area: content;
+  grid-template: minmax(4em, 0.15fr) minmax(14em, 1fr) /1fr 1fr;
+  grid-gap:0.5em;
+  grid-template-areas:
+  "title title"
+  "innerContent innerContent";
+  padding: 0;
+  margin: 0;
 }
 
-.box {
-  display: block;
-  top: 0px;
-  position: relative;
-  max-width: 16em;
-  background-color: #ffffff;
-  border-radius: 0.25em;
-  padding: 2em 1.5em;
-  margin: 0.75em;
-  text-decoration: none;
-  overflow: hidden;
-  border: 0.1em solid #cccccc;
-  color: black;
-  text-align: left;
-}
-.box .goArrow {
-  padding-top: 2em;
+.contentGrid .contentHeader {
+  /* border: 1px solid green; */
+  grid-area: title;
+  padding-left:1em;
 }
 
-.box:hover {
-  border: 1px solid #CD3D73;
+.contentGrid .contentData {
+  /* border: 1px solid green; */
+  grid-area: innerContent;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+
 }
 
-.box h3 {
-  margin-top: 8px;
-}
 
-.box:hover .goCorner {
-  margin-right: -12px;
-}
 
-.box:hover .goArrow {
+/* .box {
+  border: 0.1em solid black;
+
+} */
+
+/* .box>span {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.box:hover>span {
+  visibility: visible;
   opacity: 1;
+} */
+/* .box:hover>h3{
+  display: none;
+} */
+
+@media all and (max-width:800px) {
+
+  .contentGrid {
+    grid-template: 0.1fr 1fr/1fr 1fr;
+    grid-template-areas:
+    "title title"
+    "innerContent innerContent";
+  }
 }
 
-.box .learnMore {
-  padding-top:1em;
-}
+@media all and (max-width:600px) {
 
-.box:hover .learnMore {
-  color: #CD3D73;
-  font-style: italic;
+  .contentGrid .contentData {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+  
+  }
 }
-
 /* .box {
   border: 0.1em solid black;
 

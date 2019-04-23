@@ -1,0 +1,74 @@
+.contentGrid {
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-area: content;
+  grid-template: minmax(4em, 0.15fr) minmax(14em, 1fr) minmax(14em, 1fr)/1fr 1fr 1fr;
+  grid-gap:0.5em;
+  grid-template-areas:
+  "profileImage title title"
+  ". innerContent innerContent"
+  ". innerContent innerContent";
+  padding: 0;
+  margin: 0;
+}
+
+.basicProfile {
+  grid-area: profileImage;
+}
+.contentGrid .contentHeader {
+  /* border: 1px solid green; */
+  grid-area: title;
+  padding-left:1em;
+}
+
+.contentGrid .contentData {
+  /* border: 1px solid green; */
+  grid-area: innerContent;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  
+}
+
+img {
+  height: 50vh;
+  padding-bottom: 2em;
+  /* border: 1px solid green; */
+}
+
+
+/* .box {
+  border: 0.1em solid black;
+
+} */
+
+/* .box>span {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.box:hover>span {
+  visibility: visible;
+  opacity: 1;
+} */
+/* .box:hover>h3{
+  display: none;
+} */
+
+@media all and (max-width:800px) {
+
+  .contentGrid {
+    grid-template: 0.1fr 1fr 1fr/1fr 1fr;
+    grid-template-areas:
+    "title title"
+    "innerContent innerContent"
+    "innerContent innerContent";
+  }
+}
+
+@media all and (max-width:600px) {
+
+  .contentGrid .contentData {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+  
+  }
+}

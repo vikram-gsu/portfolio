@@ -1,0 +1,33 @@
+
+.box {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 16em;
+  background-color: #ffffff;
+  border-radius: 0.25em;
+  padding: 2em 1.5em;
+  margin: 0.75em;
+  text-decoration: none;
+  overflow: hidden;
+  border: 0.1em solid #cccccc;
+  color: black;
+  text-align: left;
+}
+
+.box:hover {
+  border: 1px solid #CD3D73;
+}
+
+.box h3 {
+  margin-top: 8px;
+}
+
+.box .learnMore {
+  padding-top:1em;
+}
+
+.box:hover .learnMore {
+  color: #CD3D73;
+  font-style: italic;
+}

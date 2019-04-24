@@ -37,7 +37,8 @@
   font-weight: bolder;
 }
 
-.Nav > li> a:active {
+.active {
+  color: #CD3D73 !important;
   font-weight: bolder;
 }
 .Nav >li:last-child {

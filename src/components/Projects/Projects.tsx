@@ -10,15 +10,37 @@ export const Projects = () => (
     </div>
 
     <div className={styles.contentData}>
-      <LinkButtonBox href="#">
+      <LinkButtonBox applicationUrl="" gitlabUrl="" id="project1">
         <h3>Next Train</h3>
+        <div>Next Train is a web application, currently focussed on Hyderabad metro. It displays the stations, train timings, fares, parking options etc. While I am currently developing the application by myself, I intend to include more developers as required.</div>
       </LinkButtonBox>
-      <LinkButtonBox href="#">
+      <LinkButtonBox applicationUrl="" gitlabUrl="" id="project2">
         <h3>ECL Documentation</h3>
+        <div>This is an open source application, aimed at improving the existing pdf based documentation for Enterprise Control Language(ECL).
+        ECL is a LexisNexis developed language used to work on HPCC Systems(High Performance Computing Clusters).
+        </div>
       </LinkButtonBox>
-      <LinkButtonBox href="#">
-        <h3>Diversity Calendar</h3>
+      <LinkButtonBox applicationUrl="" gitlabUrl="" disabled={true} id="project3">
+        <h3>At work:</h3>
+          <ul>
+            <li>Writing Python packages/module distributions</li>
+            <li>Working on React(Reports)</li>
+            <li>Building Flask APIs</li>
+            <li>Consuming REST/SOAP services in Python</li>
+            <li>Programming in ECL on HPCC Systems</li>
+            <li>Worked on Agile workflow using Gitlab CI, Jira, Zephyr etc.</li>
+          </ul>
       </LinkButtonBox>
+
+      <div className={styles.previousWork}>
+        <h3>Previously:</h3>
+        <ul>
+          <li>Worked on ASP.NET for Infosys Technologies</li>
+          <li>Graduated with Masters in Computer Science at Georgia State University</li>
+          <li>Open Source contributions include recent type definitions for react-leaflet-sidebarv2 on DefinitelyTyped, work on ECL documentation etc.</li>
+          <li>I'm part of a team that won a 24 hour healthcare hackathon organized by Pitney Bowes and RCB</li>
+        </ul>
+      </div>
     </div>
   </div>
 );

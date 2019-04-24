@@ -22,10 +22,25 @@
   /* border: 1px solid green; */
   grid-area: innerContent;
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
-
+  grid-template: 1fr 1fr/1fr 1fr 1fr;
+  grid-template-areas:
+    "project-1 project-2 project-3"
+    "previous-work previous-work previous-work";
 }
 
+#project1 {
+  grid-area: project-1;
+}
+#project2 {
+  grid-area: project-2;
+}
+#project3 {
+  grid-area: project-3;
+}
+
+.previousWork {
+  grid-area: previous-work;
+}
 
 
 /* .box {

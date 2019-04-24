@@ -21,7 +21,7 @@ export const Projects = () => (
         </div>
       </LinkButtonBox>
       <LinkButtonBox applicationUrl="" gitlabUrl="" disabled={true} id="project3">
-        <h3>At work:</h3>
+        <h3>At LN:</h3>
           <ul>
             <li>Writing Python packages/module distributions</li>
             <li>Working on React(Reports)</li>

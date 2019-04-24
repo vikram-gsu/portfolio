@@ -1,0 +1,65 @@
+/* .contentGrid {
+  border: 1px solid blue;
+  display: grid;
+  grid-area: content;
+  grid-template: 1fr 1fr 1fr /1fr 1fr 1fr;
+  grid-template-areas:
+  ". . ."
+  ". contactOptions ."
+  ". . .";
+  padding: 0;
+  margin: 0;
+}
+
+.contact_list {
+  grid-area: contactOptions;
+  color: red;
+} */
+
+.contentGrid {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_list {
+  top: 40%;
+  bottom:40%;
+  position: absolute;
+  /* padding-top:10em;
+  padding-bottom: 10em; */
+}
+
+.contact_list svg {
+  width:5em;
+  height:5em;
+  padding-right:1em;
+}
+
+.contact_list svg>path {
+  fill:grey;
+}
+
+.contact_list svg:hover >path {
+  fill:#CD3D73;
+}
+
+/* .contentGrid {
+  grid-area: content;
+  width: 100%;
+  height: auto;
+  bottom: 0px;
+  top: 0px;
+  left: 0;
+  position: absolute;
+}
+.contact_list {
+  position: absolute;
+  width: 6em;
+  height: 3em;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -50px;
+} */

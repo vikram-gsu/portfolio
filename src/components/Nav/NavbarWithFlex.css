@@ -4,13 +4,16 @@
   justify-content: space-between;
   align-items: center;
   color: black;
+  padding:0;
+  margin:0;
 }
 
 .Nav .title {
-  flex: 0.6;
+  flex: 0.5;
   /* white-space: pre-wrap; */
   font-size: 1.2em;
   text-align: left;
+  padding-left: 1em;
 }
 
 .Nav .title :active {
@@ -20,15 +23,15 @@
 .Nav > li {
   flex: 0.1;
   text-align: center;
+  padding-top: 1em;
 }
 
 .Nav > li > a{
   text-decoration: none;
-  display: block;
   box-sizing: border-box;
   border: 0;
   margin: 0;
-  padding: 0.5em 0;
+  /* padding: 0.5em 0; */
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -45,28 +48,59 @@
   padding-right: 1em;
 }
 
+@media all and (max-width: 1000px) {
+  .Nav >li {
+    padding-top:1em;
+  }
+  .Nav .title {
+    text-align: left;
+    padding-left:1em;
+  }
+}
 @media all and (max-width: 600px) {
   .Nav {
     flex-wrap: wrap
   }
-
+/* 
   .Nav > li {
-    flex-basis: 50%;
-  }
+    flex-basis: 55%;
+    display:block;
+  } */
 
-  .Nav >li:last-child {
+  /* .Nav >li:last-child {
     padding-right: 0;
-  }
+  } */
 
+  .Nav >li {
+    padding-top:1em;
+  }
   .Nav .title {
-    display: block;
-    text-align: center;
+    text-align: left;
+    padding-left:1em;
   }
 }
 
 @media all and (max-width:400px) {
+
+  
+  .Nav .title {
+    flex:1;
+    text-align: center;
+  }
   .Nav > li {
-    flex-basis: 100%
+    flex-basis: 100%;
+    text-align: left;
+    padding:0.5em 0.5em 0.5em 1em;
+    text-align: center;
+  }
+
+
+
+  .Nav >li:not(:first-child):hover {
+    background:grey;
+  }
+  .Nav >li a {
+    display: block;
   }
 
 }

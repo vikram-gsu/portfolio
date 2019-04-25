@@ -43,32 +43,13 @@
   padding-left: 1em;
 }
 
+@media all and (max-width:1000px) {
 
-/* .box {
-  border: 0.1em solid black;
-
-} */
-
-/* .box>span {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-.box:hover>span {
-  visibility: visible;
-  opacity: 1;
-} */
-/* .box:hover>h3{
-  display: none;
-} */
-
-@media all and (max-width:800px) {
-
-  .contentGrid {
-    grid-template: 0.1fr 1fr/1fr 1fr;
+  .contentGrid .contentData {
+    grid-template: 1fr 1fr/1fr 1fr;
     grid-template-areas:
-    "title title"
-    "innerContent innerContent";
+    "project-1 project-2"
+    "project-3 previous-work";
   }
 }
 
@@ -76,7 +57,11 @@
 
   .contentGrid .contentData {
     grid-template: 1fr 1fr 1fr 1fr/1fr;
-  
+    grid-template-areas:
+    "project-1"
+    "project-2"
+    "project-3"
+    "previous-work";
   }
 }
 /* .box {
@@ -97,7 +82,7 @@
   display: none;
 } */
 
-@media all and (max-width:800px) {
+/* @media all and (max-width:800px) {
   .container {
     grid-template: [nav-start] 6em [nav-end content-start] 1fr [content-end]/0.1fr 1fr 1fr 0.1fr;
     grid-template-areas:
@@ -121,4 +106,4 @@
   .contentGrid {
     grid-template: 1fr 1fr 1fr 1fr/1fr;
   }
-}
+} */

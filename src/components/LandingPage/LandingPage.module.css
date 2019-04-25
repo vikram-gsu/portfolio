@@ -22,7 +22,7 @@ html {
   /* border: 1px solid blue; */
 }
 
-@media all and (max-width:800px) {
+@media screen and (max-width:800px) {
   .container {
     grid-template: [nav-start] 6em [nav-end content-start] 1fr [content-end]/0.1fr 1fr 1fr 0.1fr;
     grid-template-areas:
@@ -32,9 +32,18 @@ html {
 
 }
 
-@media all and (max-width:600px) {
+@media screen and (max-width:600px) {
   .container {
     grid-template: [nav-start] 6em [nav-end ] 0.5fr [ content-start] 1fr [content-end]/0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      'header header header'
+      '. content .';
+  }
+
+}
+@media screen and (max-width:400px) {
+  .container {
+    grid-template: [nav-start] 8em [nav-end ] 0.5fr [ content-start] 1fr [content-end]/0.1fr 1fr 0.1fr;
     grid-template-areas:
       'header header header'
       '. content .';

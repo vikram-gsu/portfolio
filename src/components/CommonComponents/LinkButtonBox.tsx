@@ -10,14 +10,14 @@ interface LinkButtonBoxProps {
   children: React.ReactElement | Array<React.ReactElement>;
 }
 const LinkButtonBox = (props: LinkButtonBoxProps) => (
-  <Link className={styles.box} to={props.applicationUrl} id={props.id}>
+  <a className={styles.box} href={props.applicationUrl} target="_blank" id={props.id}>
     {props.children}
     {!props.disabled && (
       <div className={styles.links}>
-        <a href={props.gitlabUrl}>{"<VIEW SOURCE />"}</a>
+        <a href={props.gitlabUrl} target="_blank">{"<VIEW SOURCE />"}</a>
       </div>
     )}
-  </Link>
+  </a>
 );
 
 export default LinkButtonBox;

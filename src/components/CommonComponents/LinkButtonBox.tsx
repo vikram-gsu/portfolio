@@ -14,7 +14,7 @@ const LinkButtonBox = (props: LinkButtonBoxProps) => (
     {props.children}
     {!props.disabled && (
       <div className={styles.links}>
-        <a href="#">{"<VIEW SOURCE />"}</a>
+        <a href={props.gitlabUrl}>{"<VIEW SOURCE />"}</a>
       </div>
     )}
   </Link>

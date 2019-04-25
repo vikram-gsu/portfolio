@@ -10,7 +10,7 @@ export const Projects = () => (
     </div>
 
     <div className={styles.contentData}>
-      <LinkButtonBox applicationUrl="" gitlabUrl="" id="project1">
+      <LinkButtonBox applicationUrl="https://master.d2vxe6j27764p8.amplifyapp.com/" gitlabUrl="https://github.com/vikram-gsu/metro_lines" id="project1">
         <h3>Next Train</h3>
         <div>Next Train is a web application, currently focussed on Hyderabad metro. It displays the stations, train timings, fares, parking options etc. While I am currently developing the application by myself, I intend to include more developers as required.</div>
       </LinkButtonBox>

@@ -36,30 +36,13 @@ img {
 }
 
 
-/* .box {
-  border: 0.1em solid black;
-
-} */
-
-/* .box>span {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-.box:hover>span {
-  visibility: visible;
-  opacity: 1;
-} */
-/* .box:hover>h3{
-  display: none;
-} */
-
 @media all and (max-width:800px) {
 
   .contentGrid {
-    grid-template: 0.1fr 1fr 1fr/1fr 1fr;
+    grid-template: 0.1fr 0.5fr 1fr 1fr/1fr 1fr;
     grid-template-areas:
     "title title"
+    "profileImage profileImage"
     "innerContent innerContent"
     "innerContent innerContent";
   }
@@ -67,8 +50,15 @@ img {
 
 @media all and (max-width:600px) {
 
+  .contentGrid {
+    grid-template: 0.1fr 0.5fr 1fr/1fr;
+    grid-template-areas:
+    "title"
+    "profileImage"
+    "innerContent";
+  }
   .contentGrid .contentData {
     grid-template: 1fr 1fr 1fr 1fr/1fr;
-  
+
   }
 }

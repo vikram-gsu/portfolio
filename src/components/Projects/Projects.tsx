@@ -14,13 +14,13 @@ export const Projects = () => (
         <h3>Next Train</h3>
         <div>Next Train is a web application, currently focussed on Hyderabad metro. It displays the stations, train timings, fares, parking options etc. While I am currently developing the application by myself, I intend to include more developers as required.</div>
       </LinkButtonBox>
-      <LinkButtonBox applicationUrl="" gitlabUrl="" id="project2">
+      <LinkButtonBox applicationUrl="#" gitlabUrl="#" id="project2">
         <h3>ECL Documentation</h3>
         <div>This is an open source application, aimed at improving the existing pdf based documentation for Enterprise Control Language(ECL).
         ECL is a LexisNexis developed language used to work on HPCC Systems(High Performance Computing Clusters).
         </div>
       </LinkButtonBox>
-      <LinkButtonBox applicationUrl="" gitlabUrl="" disabled={true} id="project3">
+      <LinkButtonBox applicationUrl="#" gitlabUrl="" disabled={true} id="project3">
         <h3>At LN:</h3>
           <ul>
             <li>Writing Python packages/module distributions</li>

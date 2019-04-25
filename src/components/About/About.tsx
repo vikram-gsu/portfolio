@@ -18,11 +18,11 @@ export const About = () => (
           <h3>Software Engineer</h3>
           <span>I work primarily as a professional Software Developer</span>
         </LearnMoreBox>
-        <LearnMoreBox href="/climb">
+        <LearnMoreBox href="/climb" disabled={true}>
           <h3>Rock Climber</h3>
           <span>I qualify myself as an amateur rock climber</span>
         </LearnMoreBox>
-        <LearnMoreBox href="/contact">
+        <LearnMoreBox href="/contact" disabled={true}>
           <h3>Artist</h3>
           <span>I work in the visual medium, using a variety of tools</span>
         </LearnMoreBox>

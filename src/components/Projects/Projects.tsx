@@ -1,6 +1,7 @@
 import * as React from "react";
 import styles from "./Projects.module.css";
 import LinkButtonBox from "../CommonComponents/LinkButtonBox";
+import InfoBox from '../CommonComponents/InfoBox';
 
 export const Projects = () => (
   <div className={styles.contentGrid}>
@@ -20,7 +21,7 @@ export const Projects = () => (
         ECL is a LexisNexis developed language used to work on HPCC Systems(High Performance Computing Clusters).
         </div>
       </LinkButtonBox>
-      <LinkButtonBox applicationUrl="#" gitlabUrl="" disabled={true} id="project3">
+      <InfoBox>
         <h3>At LN:</h3>
           <ul>
             <li>Writing Python packages/module distributions</li>
@@ -30,7 +31,7 @@ export const Projects = () => (
             <li>Programming in ECL on HPCC Systems</li>
             <li>Worked on Agile workflow using Gitlab CI, Jira, Zephyr etc.</li>
           </ul>
-      </LinkButtonBox>
+      </InfoBox>
 
       <div className={styles.previousWork}>
         <h3>Previously:</h3>

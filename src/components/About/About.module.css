@@ -8,7 +8,8 @@
   "profileImage title title"
   ". innerContent innerContent"
   ". innerContent innerContent";
-  padding: 0;
+  /* padding: 0 0 2em 0; */
+  padding-bottom: 5em;
   margin: 0;
   height: 100vh;
 }
@@ -37,10 +38,22 @@ img {
 }
 
 
+@media all and (max-width:1100px) {
+
+  .contentGrid {
+    grid-template: 0.1fr 0.4fr 1fr 1fr/1fr 1fr;
+    grid-template-areas:
+    "title title"
+    "profileImage profileImage"
+    "innerContent innerContent"
+    "innerContent innerContent";
+    height: auto;
+  }
+}
 @media all and (max-width:800px) {
 
   .contentGrid {
-    grid-template: 0.1fr 0.5fr 1fr 1fr/1fr 1fr;
+    grid-template: 0.1fr 0.4fr 1fr 1fr/1fr 1fr;
     grid-template-areas:
     "title title"
     "profileImage profileImage"

@@ -18,7 +18,7 @@
 .container {
   display: grid;
   /* border: 1px solid blue; */
-  grid-template: [nav-start] minmax(6em,15%) [nav-end content-start] minmax(20em,1fr) [content-end footer-start] 20% [footer-end]/0.2fr 0.75fr 1fr 0.2fr;
+  grid-template: [nav-start] 6em [nav-end content-start] minmax(20em,1fr) [content-end footer-start] 10em [footer-end]/0.2fr 0.75fr 1fr 0.2fr;
   grid-template-areas:
     "header header header header"
     ". content content ."

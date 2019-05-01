@@ -6,8 +6,7 @@ import InfoBox from "../CommonComponents/InfoBox";
 const Projects = () => (
   <div className={styles.contentGrid}>
     <div className={styles.contentHeader}>
-      <h2>Projects</h2>
-      <span>I'm currently working on:</span>
+      <h2>Current Projects</h2>
     </div>
 
     <div className={styles.contentData}>

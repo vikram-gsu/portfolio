@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./LinkButtonsBox.module.css";
+import styles from "./LinkButtonBox.module.css";
 import { Link } from "react-router-dom";
 
 interface LinkButtonBoxProps {
@@ -14,7 +14,7 @@ const LinkButtonBox = (props: LinkButtonBoxProps) => (
     {props.children}
     {!props.disabled && (
       <div className={styles.links}>
-        <a href={props.gitlabUrl} target="_blank">{"<VIEW SOURCE />"}</a>
+        <a href={props.gitlabUrl} target="_blank">{"< VIEW SOURCE />"}</a>
       </div>
     )}
   </a>

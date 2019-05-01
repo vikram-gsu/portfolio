@@ -3,9 +3,10 @@
   list-style-type: none;
   justify-content: space-between;
   align-items: center;
-  color: black;
   padding:0;
   margin:0;
+  background-color: #aaa;
+  height: 5em;
 }
 
 .Nav .title {
@@ -23,15 +24,23 @@
 .Nav > li {
   flex: 0.1;
   text-align: center;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 
+/* .Nav > li > a{
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
 .Nav > li > a{
   text-decoration: none;
   box-sizing: border-box;
   border: 0;
   margin: 0;
-  /* padding: 0.5em 0; */
+  
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -80,8 +89,11 @@
   }
 }
 
-@media all and (max-width:400px) {
+@media all and (max-width:500px) {
 
+  .Nav {
+    height: 14em;
+  }
   
   .Nav .title {
     flex:1;
@@ -93,9 +105,6 @@
     padding:0.5em 0.5em 0.5em 1em;
     text-align: center;
   }
-
-
-
   .Nav >li:not(:first-child):hover {
     background:grey;
   }

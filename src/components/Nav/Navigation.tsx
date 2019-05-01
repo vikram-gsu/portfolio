@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import './NavbarWithFlex.css';
 import {NavLink} from 'react-router-dom';
 
-export const Navigation = () => (
+const Navigation = () => (
   <nav>
     <ul className="Nav">
       <li className='title'><NavLink to="/" activeClassName="active">Vikram Pareddy</NavLink></li>
@@ -13,3 +13,5 @@ export const Navigation = () => (
     </ul>
   </nav>
 )
+
+export default Navigation;

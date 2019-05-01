@@ -1,16 +1,29 @@
-.box {
+/* .box {
   display: block;
   top: 0px;
   position: relative;
   max-width: 16em;
-  background-color: #ffffff;
+  background-color: #444;
+  border: 0.1em solid #000;
+  color: white;
   border-radius: 0.25em;
   padding: 2em 1.5em;
   margin: 0.75em;
   text-decoration: none;
-  overflow: hidden;
+  overflow: scroll;
+  text-align: left;
+} */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
   border: 0.1em solid #cccccc;
   color: black;
+  border-radius: 0.25em;
+  padding: 2em 1.5em;
+  margin: 0.75em;
+  text-decoration: none;
   text-align: left;
 }
 
@@ -34,6 +47,10 @@
 .box:hover h3 {
   color: #CD3D73;
   font-style: italic;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 .disabled {

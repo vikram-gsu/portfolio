@@ -3,7 +3,7 @@ import profilePic from "../../assets/profile.jpg";
 import styles from "./About.module.css";
 import LearnMoreBox from "../CommonComponents/LearnMoreBox";
 
-export const About = () => (
+const About = () => (
   <aside className={styles.contentGrid}>
     <div className="basicProfile">
       <img id="profileImage" src={profilePic} alt="Profile Image" />
@@ -33,3 +33,5 @@ export const About = () => (
     </div>
   </aside>
 );
+
+export default About;

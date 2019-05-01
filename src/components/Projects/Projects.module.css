@@ -3,26 +3,27 @@
   /* border: 1px solid blue; */
   display: grid;
   grid-area: content;
-  grid-template: minmax(4em, 0.15fr) minmax(14em, 1fr) /1fr 1fr;
+  grid-template: minmax(5em, 0.2fr) minmax(8em, 1fr) /1fr 1fr;
   grid-gap:0.5em;
   grid-template-areas:
   "title title"
   "innerContent innerContent";
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
 
 .contentGrid .contentHeader {
   /* border: 1px solid green; */
   grid-area: title;
-  padding-left:1em;
+  padding:3em 1em 1em 1em;
 }
 
 .contentGrid .contentData {
   /* border: 1px solid green; */
   grid-area: innerContent;
   display: grid;
-  grid-template: 1fr 1fr/1fr 1fr 1fr;
+  grid-template: 1fr 0.5fr/1fr 1fr 1fr;
   grid-template-areas:
     "project-1 project-2 project-3"
     "previous-work previous-work previous-work";
@@ -40,7 +41,7 @@
 
 .previousWork {
   grid-area: previous-work;
-  padding-left: 1em;
+  padding: 1em;
 }
 
 @media all and (max-width:1000px) {
@@ -55,8 +56,16 @@
 
 @media all and (max-width:600px) {
 
+  .contentGrid {
+    grid-template: minmax(2.5em, 0.08fr) minmax(5em, 1fr) /1fr 1fr;
+    /* grid-gap:0.5em; */
+    grid-template-areas:
+    "title title"
+    "innerContent innerContent";
+    height: auto;
+  }
   .contentGrid .contentData {
-    grid-template: 1fr 1fr 1fr 1fr/1fr;
+    grid-template: 1fr 1fr 1fr 0.1fr/1fr;
     grid-template-areas:
     "project-1"
     "project-2"

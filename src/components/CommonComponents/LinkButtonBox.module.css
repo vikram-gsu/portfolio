@@ -1,7 +1,9 @@
-/* .box {
+/* 
+.box {
   display: block;
   top: 0px;
   position: relative;
+  max-width: 16em;
   background-color: #444;
   border: 0.1em solid #000;
   color: white;
@@ -9,13 +11,12 @@
   padding: 2em 1.5em;
   margin: 0.75em;
   text-decoration: none;
-  overflow: hidden;
+  overflow: scroll;
   text-align: left;
 } */
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #ffffff;
   border: 0.1em solid #cccccc;
   color: black;
@@ -24,6 +25,7 @@
   margin: 0.75em;
   text-decoration: none;
   text-align: left;
+  justify-content: center;
 }
 
 .box:hover {
@@ -31,16 +33,18 @@
 }
 
 .box h3 {
-  margin-top: 8px;
+  margin-top: 0.5em;
+  padding-left: 0;
 }
 
 .box .learnMore {
-  padding-top: 1em;
+  padding-top:1em;
 }
-
-.box:hover .learnMore {
-  color: #CD3D73;
-  font-style: italic;
+.box .links {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top:1em;
 }
 
 .box:hover h3 {
@@ -48,25 +52,12 @@
   font-style: italic;
 }
 
-.disabled {
-  color: black;
-  background: rgba(190, 190, 190, 0.541);
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: black;
-}
-
-.box .disabled:hover {
-  background: grey;
-}
-
-.button:hover {
+.box .links a:hover {
   font-style: italic;
   color: rgb(26, 122, 212);
 }
-
-/* .button {
+/* 
+.box .links a {
   text-decoration: none;
   padding:0.5em;
   width: 100%;
@@ -76,7 +67,7 @@
   border-radius: 10px;
   text-align: center;
 } */
-.button {
+.box .links a {
   text-decoration: none;
   padding:0.5em;
   width: 100%;
@@ -87,19 +78,12 @@
   text-align: center;
 }
 
-.level {
-  display: flex;
-  justify-content: space-between;
-  padding-top:1em;
+.box h3 +ul {
+  list-style-type: circle;
+  padding:0;
+  margin:0;
 }
-
-
-@media screen and (max-width:450px){
-  .level {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .levelLeft {
-    height: 2em;
-  }
+.box h3 + ul > li:hover {
+  color: #CD3D73;
+  font-style: italic;
 }

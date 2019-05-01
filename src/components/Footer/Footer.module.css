@@ -1,0 +1,8 @@
+.footerGrid {
+  grid-area: footer;
+  background-color: #aaa;
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

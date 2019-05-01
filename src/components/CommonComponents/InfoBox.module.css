@@ -1,15 +1,29 @@
 
-.box {
+/* .box {
   display: block;
   top: 0px;
   position: relative;
   max-width: 16em;
+  background-color: #444;
+  border: 0.1em solid #000;
+  color: white;
+  border-radius: 0.25em;
+  padding: 2em 1.5em;
+  margin: 0.75em;
+  text-decoration: none;
+  overflow: scroll;
+  text-align: left;
+} */
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #ffffff;
   border-radius: 0.25em;
   padding: 2em 1.5em;
   margin: 0.75em;
   text-decoration: none;
-  overflow: hidden;
+  overflow: scroll;
   border: 0.1em solid #cccccc;
   color: black;
   text-align: left;
@@ -21,6 +35,7 @@
 
 .box h3 {
   margin-top: 0.5em;
+  padding-left: 0;
 }
 
 .box .learnMore {
@@ -56,10 +71,9 @@
 
 .box h3 +ul {
   list-style-type: circle;
-  padding:0;
+  padding-left:1em;
   margin:0;
 }
 .box h3 + ul > li:hover {
-  color: #CD3D73;
-  font-style: italic;
+  
 }

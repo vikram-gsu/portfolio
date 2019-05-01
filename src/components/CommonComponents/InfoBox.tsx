@@ -1,6 +1,5 @@
 import * as React from "react";
-import styles from "./LinkButtonsBox.module.css";
-import { Link } from "react-router-dom";
+import styles from "./InfoBox.module.css";
 
 interface InfoBoxProps {
   children: React.ReactElement | Array<React.ReactElement>;

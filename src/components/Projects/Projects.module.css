@@ -46,9 +46,6 @@
 
 @media screen and (max-width:1000px) {
 
-  .contentGrid {
-    height: auto;
-  }
   .contentGrid .contentData {
     grid-template: 1fr 1fr/1fr 1fr;
     grid-template-areas:
